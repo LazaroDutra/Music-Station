@@ -12,17 +12,17 @@
 <AnchorPane id="AnchorPane" prefHeight="319.0" prefWidth="707.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="music.station.ProcurarFXMLController">
    <children>
       <Label layoutX="14.0" layoutY="14.0" text="Procurar por uma Música" />
-      <TextField layoutX="14.0" layoutY="31.0" prefHeight="27.0" prefWidth="254.0" promptText="Infome o nome para ser procurado" />
-      <TableView layoutX="19.0" layoutY="105.0" prefHeight="200.0" prefWidth="669.0">
+      <TextField fx:id="pMusica" layoutX="14.0" layoutY="31.0" prefHeight="27.0" prefWidth="254.0" promptText="Infome o nome para ser procurado" />
+      <TableView fx:id="tabela" layoutX="19.0" layoutY="105.0" prefHeight="200.0" prefWidth="669.0">
         <columns>
-          <TableColumn editable="false" prefWidth="190.0" text="Música" />
-          <TableColumn editable="false" minWidth="0.0" prefWidth="109.0" text="Álbum" />
-            <TableColumn editable="false" minWidth="0.0" prefWidth="150.0" text="Artista" />
-            <TableColumn editable="false" minWidth="0.0" prefWidth="110.0" text="Gênero" />
-            <TableColumn editable="false" minWidth="0.0" prefWidth="109.0" text="Classificação" />
+          <TableColumn fx:id="colunMusica" editable="false" prefWidth="190.0" text="Música" />
+          <TableColumn fx:id="colunAlbum" editable="false" minWidth="0.0" prefWidth="109.0" text="Álbum" />
+            <TableColumn fx:id="colunArtista" editable="false" minWidth="0.0" prefWidth="150.0" text="Artista" />
+            <TableColumn fx:id="colunGenero" editable="false" minWidth="0.0" prefWidth="110.0" text="Gênero" />
+            <TableColumn fx:id="colunClas" editable="false" minWidth="0.0" prefWidth="109.0" text="Classificação" />
         </columns>
       </TableView>
-      <Button layoutX="275.0" layoutY="31.0" mnemonicParsing="false" text="Pesquisar" />
+      <Button fx:id="pesquisar" layoutX="275.0" layoutY="31.0" mnemonicParsing="false" onAction="#adt" text="Pesquisar" />
       <Label layoutX="400.0" layoutY="12.0" prefHeight="66.0" prefWidth="269.0" text="Music Station" textAlignment="CENTER">
          <font>
             <Font size="39.0" />
@@ -37,7 +37,6 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <ChoiceBox layoutX="16.0" layoutY="65.0" prefWidth="150.0" />
       <Rectangle height="6.0" layoutX="167.0" layoutY="76.0" stroke="#ffffff00" strokeType="INSIDE" width="541.0">
          <fill>
             <LinearGradient endX="1.0" endY="1.0">
@@ -49,5 +48,6 @@
             </LinearGradient>
          </fill>
       </Rectangle>
+      <ComboBox fx:id="por" layoutX="14.0" layoutY="66.0" prefHeight="27.0" prefWidth="154.0" />
    </children>
 </AnchorPane>

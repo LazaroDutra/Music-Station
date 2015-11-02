@@ -5,17 +5,19 @@
  */
 package music.station;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import javafx.scene.*;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.stage.*;
 
 /**
  * FXML Controller class
@@ -49,7 +51,7 @@ public class AlterarFXMLController implements Initializable {
         // TODO
     }    
     @FXML
-    private void PalterarM() throws SQLException{
+    private void PalterarM() throws SQLException, IOException{
         contest conn = new contest();
         try {
         Statement st = conn.conectar1().createStatement();
@@ -64,6 +66,13 @@ public class AlterarFXMLController implements Initializable {
         }
         if(rs.first() == false){
             System.err.println("Erro encontrado !!! ");
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("NDataFXML.fxml"));
+                Parent root1 = (Parent) fxmlLoader.load();
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root1));  
+                stage.initStyle(StageStyle.UNDECORATED);
+                stage.show();
+               
         }
         }catch (SQLException e){
             System.err.println("Erro encontrado !!! ");

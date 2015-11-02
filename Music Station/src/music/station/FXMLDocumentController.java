@@ -128,7 +128,6 @@ public class FXMLDocumentController implements Initializable {
         try {
             Statement st = conn.conectar1().createStatement();
             ResultSet rs = st.executeQuery("SELECT * FROM `Musica`;");
-            MusicStation rm = new MusicStation();
            while(rs.next()){
                
                Musica m = new Musica("1","2","3","4",5);

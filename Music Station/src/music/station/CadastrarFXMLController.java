@@ -18,6 +18,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
 import java.util.*;
+import javafx.stage.StageStyle;
 
 /**
  * FXML Controller class
@@ -88,8 +89,9 @@ public class CadastrarFXMLController implements Initializable {
                 Parent root1 = (Parent) fxmlLoader.load();
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root1));  
+                stage.initStyle(StageStyle.UNDECORATED);
                 stage.show();
-                stage.resizableProperty().setValue(Boolean.FALSE);
+               
             
                 
             
