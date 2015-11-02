@@ -9,26 +9,38 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="162.0" prefWidth="382.0" style="-fx-background-color: Black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="music.station.CadastrarFXMLController">
+<AnchorPane id="AnchorPane" prefHeight="162.0" prefWidth="382.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="music.station.CadastrarFXMLController">
      <children>
-      <Label layoutX="89.0" layoutY="14.0" text="Music Station" textAlignment="CENTER">
+      <Button fx:id="closeButton" layoutX="173.0" layoutY="128.0" mnemonicParsing="false" onAction="#clos" text="Ok" />
+      <Label layoutX="24.0" layoutY="73.0" prefHeight="24.0" prefWidth="336.0" text="Música cadastrada com sucesso !!!" AnchorPane.bottomAnchor="72.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="73.0">
          <font>
-            <Font name="System Bold" size="30.0" />
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="96.0" layoutY="14.0" prefHeight="37.0" prefWidth="193.0" text="Music Station">
+         <font>
+            <Font size="30.0" />
          </font>
          <textFill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
                   <Stop color="RED" />
-                  <Stop color="#2600ff" offset="1.0" />
+                  <Stop color="#ff1fd7" offset="0.5001927117653641" />
+                  <Stop color="#00a1ff" offset="1.0" />
                </stops>
             </LinearGradient>
          </textFill>
       </Label>
-      <Button fx:id="closeButton" layoutX="173.0" layoutY="128.0" mnemonicParsing="false" onAction="#clos" text="Ok" />
-      <Label layoutX="24.0" layoutY="73.0" prefHeight="24.0" prefWidth="336.0" text="Música cadastrada com sucesso !!!" textFill="WHITE" AnchorPane.bottomAnchor="72.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="73.0">
-         <font>
-            <Font name="System Bold" size="19.0" />
-         </font>
-      </Label>
+      <Rectangle height="5.0" layoutY="49.0" stroke="#ffffff00" strokeType="INSIDE" width="382.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="#ff1fd7" offset="0.5001927117653641" />
+                  <Stop color="#00a1ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
    </children>
 </AnchorPane>

@@ -56,7 +56,7 @@ public class MusicStation extends Application {
 
     }
     
-    public void gerar(Musica m){
+    /*public void gerar(Musica m){
             // criação do documento 
         
         Document document = new Document();
@@ -104,6 +104,6 @@ public class MusicStation extends Application {
         } 
         document.close(); 
         
-    }
+    }*/
         
 }

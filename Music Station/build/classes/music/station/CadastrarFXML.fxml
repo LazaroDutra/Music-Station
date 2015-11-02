@@ -9,36 +9,48 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="268.0" prefWidth="382.0" style="-fx-background-color: Black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="music.station.CadastrarFXMLController">
+<AnchorPane id="AnchorPane" prefHeight="268.0" prefWidth="374.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="music.station.CadastrarFXMLController">
      <children>
       <Button layoutX="257.0" layoutY="209.0" mnemonicParsing="false" onAction="#cadMusica" text="Salvar" />
-      <Label layoutX="15.0" layoutY="90.0" text="Nome da Música" textFill="WHITE" />
-      <Label layoutX="204.0" layoutY="140.0" text="Gênero musical" textFill="WHITE" />
-      <Label layoutX="201.0" layoutY="90.0" text="Nome do Álbum" textFill="WHITE" />
-      <Label layoutX="18.0" layoutY="192.0" text="Classificação da música" textFill="WHITE" />
-      <Label layoutX="18.0" layoutY="140.0" text="Nome do Artista" textFill="WHITE" />
-      <TextField fx:id="nMusica" layoutX="15.0" layoutY="107.0" promptText="Insira o nome da música" />
-      <TextField fx:id="nAlbum" layoutX="201.0" layoutY="107.0" promptText="Insira o nome do Álbum" />
-      <TextField fx:id="nArtista" layoutX="18.0" layoutY="157.0" promptText="Insira o nome do Artista" />
-      <TextField fx:id="nGenero" layoutX="201.0" layoutY="157.0" promptText="Insira o Gênero" />
-      <TextField fx:id="classif" layoutX="18.0" layoutY="209.0" promptText="Insira a clasisficação " />
-      <Label layoutX="98.0" layoutY="14.0" text="Music Station" textAlignment="CENTER">
+      <Label layoutX="10.0" layoutY="92.0" text="Nome da Música" />
+      <Label layoutX="199.0" layoutY="142.0" text="Gênero musical" />
+      <Label layoutX="196.0" layoutY="92.0" text="Nome do Álbum" />
+      <Label layoutX="13.0" layoutY="194.0" text="Classificação da música" />
+      <Label layoutX="13.0" layoutY="142.0" text="Nome do Artista" />
+      <TextField fx:id="nMusica" layoutX="10.0" layoutY="109.0" promptText="Insira o nome da música" />
+      <TextField fx:id="nAlbum" layoutX="196.0" layoutY="109.0" promptText="Insira o nome do Álbum" />
+      <TextField fx:id="nArtista" layoutX="13.0" layoutY="159.0" promptText="Insira o nome do Artista" />
+      <TextField fx:id="nGenero" layoutX="196.0" layoutY="159.0" promptText="Insira o Gênero" />
+      <TextField fx:id="classif" layoutX="13.0" layoutY="211.0" promptText="Insira a clasisficação " />
+      <Label layoutX="104.0" layoutY="14.0" prefHeight="17.0" prefWidth="167.0" text="Music Station" textAlignment="CENTER">
          <font>
-            <Font name="System Bold" size="30.0" />
+            <Font name="System Bold" size="23.0" />
          </font>
          <textFill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
                   <Stop color="RED" />
-                  <Stop color="#2600ff" offset="1.0" />
+                  <Stop color="#ff1fd7" offset="0.4983277591973244" />
+                  <Stop color="#00a1ff" offset="1.0" />
                </stops>
             </LinearGradient>
          </textFill>
       </Label>
-      <Label layoutX="117.0" layoutY="51.0" prefHeight="23.0" prefWidth="175.0" text="Cadastrar Músicas" textAlignment="CENTER" textFill="WHITE">
+      <Label layoutX="100.0" layoutY="53.0" prefHeight="23.0" prefWidth="175.0" text="Cadastrar Músicas" textAlignment="CENTER">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
+      <Rectangle height="4.0" layoutY="41.0" stroke="#ffffff00" strokeType="INSIDE" width="375.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="#ff1fd7" offset="0.5001927117653641" />
+                  <Stop color="#00a1ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
    </children>
 </AnchorPane>

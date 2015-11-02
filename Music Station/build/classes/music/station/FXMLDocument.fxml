@@ -13,9 +13,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="460.0" prefWidth="573.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="music.station.FXMLDocumentController">
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="460.0" prefWidth="573.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="music.station.FXMLDocumentController">
     <children>
-      <MenuBar prefHeight="31.0" prefWidth="573.0" AnchorPane.bottomAnchor="429.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <MenuBar prefHeight="31.0" prefWidth="573.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="429.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <menus>
           <Menu mnemonicParsing="false" text="Arquivo">
             <items>
@@ -26,7 +26,7 @@
           </Menu>
           <Menu mnemonicParsing="false" text="Editar">
             <items>
-                  <MenuItem mnemonicParsing="false" text="Alterar Música" />
+                  <MenuItem mnemonicParsing="false" onAction="#malterar" text="Alterar Música" />
                   <SeparatorMenuItem mnemonicParsing="false" />
               <MenuItem mnemonicParsing="false" onAction="#mexcluir" text="Excluir Música" />
                   <SeparatorMenuItem mnemonicParsing="false" />
@@ -40,7 +40,7 @@
           </Menu>
         </menus>
       </MenuBar>
-      <TableView fx:id="tabela" layoutY="129.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="430.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="129.0">
+      <TableView fx:id="tabela" layoutY="129.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="430.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="129.0">
         <columns>
           <TableColumn fx:id="colunMusica" editable="false" prefWidth="159.0" text="Música" />
           <TableColumn fx:id="colunAlbum" editable="false" prefWidth="114.0" text="Álbum" />
@@ -54,7 +54,8 @@
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
                   <Stop color="RED" />
-                  <Stop color="#2600ff" offset="1.0" />
+                  <Stop color="#ff1fd7" offset="0.4983277591973244" />
+                  <Stop color="#00a1ff" offset="1.0" />
                </stops>
             </LinearGradient>
          </textFill>
@@ -62,12 +63,22 @@
             <Font name="System Bold" size="30.0" />
          </font>
       </Label>
-      <Circle fx:id="on" blendMode="LIGHTEN" disable="true" fill="RED" layoutX="559.0" layoutY="40.0" radius="8.0" stroke="BLACK" strokeType="INSIDE">
+      <Circle fx:id="on" disable="true" fill="RED" layoutX="559.0" layoutY="40.0" radius="8.0" stroke="BLACK" strokeType="INSIDE">
          <effect>
             <Glow level="1.0" />
          </effect>
       </Circle>
-      <Label layoutX="436.0" layoutY="31.0" text="Server Conection" textFill="WHITE" />
-      <Button layoutX="456.0" layoutY="99.0" mnemonicParsing="false" onAction="#adt" text="Atualizar Tabela" />
+      <Label layoutX="436.0" layoutY="31.0" text="Server Conection" />
+      <Rectangle height="5.0" layoutY="97.0" stroke="#ffffff00" strokeType="INSIDE" width="573.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="#ff1fd7" offset="0.5001927117653641" />
+                  <Stop color="#00a1ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
     </children>
 </AnchorPane>

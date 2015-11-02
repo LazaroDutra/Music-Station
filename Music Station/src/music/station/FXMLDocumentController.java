@@ -76,6 +76,18 @@ public class FXMLDocumentController implements Initializable {
         } catch(Exception e) {
           }
     }
+    @FXML
+    private void malterar(ActionEvent event){
+        try {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("AlterarFXML.fxml"));
+                Parent root1 = (Parent) fxmlLoader.load();
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root1));  
+                stage.show();
+                stage.resizableProperty().setValue(Boolean.FALSE);
+        } catch(Exception e) {
+          }
+    }
     
     @FXML 
     private TableView <Musica> tabela;
@@ -132,7 +144,6 @@ public class FXMLDocumentController implements Initializable {
                 System.out.println(rs.getString("Genero"));
                 System.out.println(rs.getString("Class"));   
                 liMusica.add(m); 
-                rm.gerar(liMusica.get(1));
             }
             colunMusica.setCellValueFactory( new PropertyValueFactory("musica"));
             colunAlbum.setCellValueFactory( new PropertyValueFactory("album"));
