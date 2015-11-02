@@ -51,7 +51,7 @@ public class ExcluirFXMLController implements Initializable {
         ok.setVisible(true);
         }
         catch(Exception e){
-            System.err.println("Got an exception! ");
+            System.err.println("Erro encontrado !!! ");
             System.err.println(e.getMessage());
         }
     }
