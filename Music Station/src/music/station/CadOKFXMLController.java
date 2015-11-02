@@ -18,17 +18,17 @@ import javafx.stage.Stage;
  *
  * @author Lazaro
  */
-public class AboutFXMLController implements Initializable {
+public class CadOKFXMLController implements Initializable {
 
     /**
      * Initializes the controller class.
      */
     @FXML
-    private Button closeButton;
-     @FXML
-    private void clos (ActionEvent event) throws Exception{
-                Stage stage = (Stage) closeButton.getScene().getWindow();
-                stage.close();
+    private Button ok;
+    @FXML
+    private void close (ActionEvent ev){
+    Stage stage = (Stage) ok.getScene().getWindow();
+    stage.close();
     }
     @Override
     public void initialize(URL url, ResourceBundle rb) {

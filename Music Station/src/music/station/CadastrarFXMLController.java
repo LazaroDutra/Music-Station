@@ -18,6 +18,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
 import java.util.*;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.stage.StageStyle;
 
 /**
@@ -43,22 +45,32 @@ public class CadastrarFXMLController implements Initializable {
    @FXML
     private TextField classif;
    @FXML
-    private Button closeButton;
-   @FXML
-   private Platform ok;
+   private ComboBox clas;
+   
 
     
-    
+    private ObservableList listaClass;
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        listaClass = FXCollections.observableArrayList();
+        listaClass.add(10);
+        listaClass.add(9);
+        listaClass.add(8);
+        listaClass.add(7);
+        listaClass.add(6);
+        listaClass.add(5);
+        listaClass.add(4);
+        listaClass.add(3);
+        listaClass.add(2);
+        listaClass.add(1);
+        listaClass.add(0);
+        clas.setItems(listaClass);
+        
+        
     } 
     
-    @FXML
-    private void clos (ActionEvent event) throws Exception{
-                Stage stage = (Stage) closeButton.getScene().getWindow();
-                stage.close();
-    }
+   
 
     
     
@@ -70,7 +82,7 @@ public class CadastrarFXMLController implements Initializable {
             String nal = nAlbum.getText();
             String nar = nArtista.getText();
             String ng = nGenero.getText();
-            int classi = Integer.parseInt(classif.getText());
+            int classi = Integer.parseInt(clas.getValue().toString());
        
             m.setMusica(nm);
             m.setAlbum(nal);
@@ -80,21 +92,18 @@ public class CadastrarFXMLController implements Initializable {
             m.imprime(m);
             m.adM(m);
             enm(m);
-            nMusica.setText(null);
-            nAlbum.setText(null);
-            nArtista.setText(null);
-            nGenero.setText(null);
-            classif.setText(null);
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("OkCadastrarFXML.fxml"));
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("CadOKFXML.fxml"));
                 Parent root1 = (Parent) fxmlLoader.load();
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root1));  
                 stage.initStyle(StageStyle.UNDECORATED);
                 stage.show();
-               
-            
-                
-            
+            nMusica.setText(null);
+            nAlbum.setText(null);
+            nArtista.setText(null);
+            nGenero.setText(null);
+            clas.setValue(null);
         } catch(Exception e) {System.out.println("Problemas!"+e); }
     }
     

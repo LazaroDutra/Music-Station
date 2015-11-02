@@ -60,12 +60,8 @@ public class ExcluirFXMLController implements Initializable {
         nMusica.setText(null);
         conf.setVisible(false);
         ok.setVisible(false);
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("FXMLDocumentController.fxml"));
-                Parent root1 = (Parent) fxmlLoader.load();
-                Stage stage = new Stage();
-                stage.setScene(new Scene(root1));  
-                stage.close();
-                stage.resizableProperty().setValue(Boolean.FALSE);
+        Stage stage = (Stage) ok.getScene().getWindow();
+        stage.close();
 
         
     }

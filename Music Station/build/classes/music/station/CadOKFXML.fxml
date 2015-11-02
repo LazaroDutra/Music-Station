@@ -9,9 +9,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" fx:id="ok" prefHeight="162.0" prefWidth="382.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="music.station.CadastrarFXMLController">
-     <children>
-      <Button fx:id="closeButton" layoutX="173.0" layoutY="128.0" mnemonicParsing="false" onAction="#close" text="Ok" />
+<AnchorPane id="AnchorPane" prefHeight="162.0" prefWidth="382.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="music.station.CadOKFXMLController">
+    <children>
+      <Button fx:id="ok" layoutX="173.0" layoutY="128.0" mnemonicParsing="false" onAction="#close" text="Ok" />
       <Label layoutX="24.0" layoutY="73.0" prefHeight="24.0" prefWidth="336.0" text="Música cadastrada com sucesso !!!" AnchorPane.bottomAnchor="72.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="73.0">
          <font>
             <Font name="System Bold" size="19.0" />

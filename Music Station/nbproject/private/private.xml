@@ -3,8 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/lazarodutra/Doctum/Music%20Station/src/music/station/FXMLDocumentController.java</file>
+            <file>file:/Users/lazarodutra/Doctum/Music%20Station/src/music/station/AlterarFXMLController.java</file>
             <file>file:/Users/lazarodutra/Doctum/Music%20Station/src/music/station/CadastrarFXMLController.java</file>
+            <file>file:/Users/lazarodutra/Doctum/Music%20Station/src/music/station/AltOKFXMLController.java</file>
         </group>
     </open-files>
 </project-private>
