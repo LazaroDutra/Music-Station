@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="184.0" prefWidth="288.0" style="-fx-background-color: Black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="music.station.ExcluirFXMLController">
+   <children>
+      <Button fx:id="excluir" layoutX="116.0" layoutY="79.0" mnemonicParsing="false" onAction="#exMusica" text="Excluir" />
+      <TextField fx:id="nMusica" layoutX="17.0" layoutY="40.0" prefHeight="27.0" prefWidth="254.0" promptText="Infome a Música a ser excluida" />
+      <Label layoutX="86.0" layoutY="14.0" text="Excluir uma Música" textFill="WHITE" />
+      <Label fx:id="conf" layoutX="50.0" layoutY="115.0" text="Música excluida com sucesso !" textAlignment="CENTER" textFill="RED" visible="false" />
+      <Button fx:id="ok" layoutX="126.0" layoutY="143.0" mnemonicParsing="false" onAction="#ok" text="Ok" visible="false" />
+   </children>
+</AnchorPane>

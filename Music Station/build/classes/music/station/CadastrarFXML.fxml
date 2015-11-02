@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="268.0" prefWidth="382.0" style="-fx-background-color: Black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="music.station.CadastrarFXMLController">
+     <children>
+      <Button layoutX="257.0" layoutY="209.0" mnemonicParsing="false" onAction="#cadMusica" text="Salvar" />
+      <Label layoutX="15.0" layoutY="90.0" text="Nome da Música" textFill="WHITE" />
+      <Label layoutX="204.0" layoutY="140.0" text="Gênero musical" textFill="WHITE" />
+      <Label layoutX="201.0" layoutY="90.0" text="Nome do Álbum" textFill="WHITE" />
+      <Label layoutX="18.0" layoutY="192.0" text="Classificação da música" textFill="WHITE" />
+      <Label layoutX="18.0" layoutY="140.0" text="Nome do Artista" textFill="WHITE" />
+      <TextField fx:id="nMusica" layoutX="15.0" layoutY="107.0" promptText="Insira o nome da música" />
+      <TextField fx:id="nAlbum" layoutX="201.0" layoutY="107.0" promptText="Insira o nome do Álbum" />
+      <TextField fx:id="nArtista" layoutX="18.0" layoutY="157.0" promptText="Insira o nome do Artista" />
+      <TextField fx:id="nGenero" layoutX="201.0" layoutY="157.0" promptText="Insira o Gênero" />
+      <TextField fx:id="classif" layoutX="18.0" layoutY="209.0" promptText="Insira a clasisficação " />
+      <Label layoutX="98.0" layoutY="14.0" text="Music Station" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="#2600ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="117.0" layoutY="51.0" prefHeight="23.0" prefWidth="175.0" text="Cadastrar Músicas" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

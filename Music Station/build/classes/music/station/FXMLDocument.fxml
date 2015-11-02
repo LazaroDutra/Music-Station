@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="460.0" prefWidth="573.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="music.station.FXMLDocumentController">
+    <children>
+      <MenuBar prefHeight="31.0" prefWidth="573.0" AnchorPane.bottomAnchor="429.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Arquivo">
+            <items>
+                  <MenuItem fx:id="att" mnemonicParsing="false" onAction="#adt" text="Atualizar" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" onAction="#mnovo" text="Novo" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Editar">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Alterar Música" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" onAction="#mexcluir" text="Excluir Música" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#mprocurar" text="Procurar Música" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ajuda">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TableView fx:id="tabela" layoutY="129.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="430.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="129.0">
+        <columns>
+          <TableColumn fx:id="colunMusica" editable="false" prefWidth="159.0" text="Música" />
+          <TableColumn fx:id="colunAlbum" editable="false" prefWidth="114.0" text="Álbum" />
+            <TableColumn fx:id="colunArtista" editable="false" prefWidth="90.0" text="Artista" />
+            <TableColumn fx:id="colunGenero" editable="false" prefWidth="92.0" text="Gênero" />
+            <TableColumn fx:id="colunClas" editable="false" prefWidth="117.0" text="Classificação" />
+        </columns>
+      </TableView>
+      <Label layoutX="183.0" layoutY="62.0" text="Music Station" textAlignment="CENTER">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="#2600ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Circle fx:id="on" blendMode="LIGHTEN" disable="true" fill="RED" layoutX="559.0" layoutY="40.0" radius="8.0" stroke="BLACK" strokeType="INSIDE">
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Circle>
+      <Label layoutX="436.0" layoutY="31.0" text="Server Conection" textFill="WHITE" />
+      <Button layoutX="456.0" layoutY="99.0" mnemonicParsing="false" onAction="#adt" text="Atualizar Tabela" />
+    </children>
+</AnchorPane>
