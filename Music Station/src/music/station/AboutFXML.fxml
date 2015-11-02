@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="316.0" prefWidth="263.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="music.station.AboutFXMLController">
+   <children>
+      <TextArea editable="false" layoutX="14.0" layoutY="62.0" prefHeight="208.0" prefWidth="235.0" text="Trabalho Programação Orientada a Objeto.&#10;&#10;Trabalho feito por :   Lázaro Dutra.&#10;&#10;Professor: Salim Aouar.&#10;&#10;Faculdades Unificadas Doctum  &#10;Teófilo Ottoni.&#10;&#10;" wrapText="true" />
+      <Button fx:id="closeButton" layoutX="116.0" layoutY="275.0" mnemonicParsing="false" onAction="#clos" text="Ok" />
+      <Label layoutX="50.0" layoutY="14.0" prefHeight="31.0" prefWidth="167.0" text="Music Station">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="#ff1fd7" offset="0.5001927117653641" />
+                  <Stop color="#00a1ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Rectangle height="6.0" layoutX="1.0" layoutY="46.0" stroke="#ffffff00" strokeType="INSIDE" width="262.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="#ff1fd7" offset="0.5001927117653641" />
+                  <Stop color="#00a1ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+   </children>
+</AnchorPane>

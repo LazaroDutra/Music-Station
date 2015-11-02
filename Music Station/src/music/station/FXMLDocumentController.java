@@ -24,6 +24,7 @@ import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 
 
@@ -85,6 +86,18 @@ public class FXMLDocumentController implements Initializable {
                 stage.setScene(new Scene(root1));  
                 stage.show();
                 stage.resizableProperty().setValue(Boolean.FALSE);
+        } catch(Exception e) {
+          }
+    }
+    @FXML
+    private void mabout(ActionEvent event){
+        try {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("AboutFXML.fxml"));
+                Parent root1 = (Parent) fxmlLoader.load();
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root1));  
+                stage.initStyle(StageStyle.UNDECORATED);
+                stage.show();
         } catch(Exception e) {
           }
     }
