@@ -9,7 +9,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="316.0" prefWidth="263.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="music.station.AboutFXMLController">
+<AnchorPane id="AnchorPane" prefHeight="316.0" prefWidth="263.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="music.station.AltOKFXMLController">
    <children>
       <TextArea editable="false" layoutX="14.0" layoutY="62.0" prefHeight="208.0" prefWidth="235.0" text="Trabalho Programação Orientada a Objeto.&#10;&#10;Trabalho feito por :   Lázaro Dutra.&#10;&#10;Professor: Salim Aouar.&#10;&#10;Faculdades Unificadas Doctum  &#10;Teófilo Ottoni.&#10;&#10;" wrapText="true" />
       <Button fx:id="ok" layoutX="116.0" layoutY="275.0" mnemonicParsing="false" onAction="#close" text="Ok" />
@@ -27,7 +27,7 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <Rectangle height="6.0" layoutX="1.0" layoutY="46.0" stroke="#ffffff00" strokeType="INSIDE" width="262.0">
+      <Rectangle height="6.0" layoutY="46.0" stroke="#ffffff00" strokeType="INSIDE" width="263.0">
          <fill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>

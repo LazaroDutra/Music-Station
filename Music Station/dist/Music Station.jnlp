@@ -8,7 +8,6 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="lib/iText-5.0.5.jar" size="1599728" download="eager" />
     <jar href="lib/mysql-connector-java-5.1.37-bin.jar" size="985603" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Music Station" >

@@ -5,16 +5,8 @@
  */
 package music.station;
 
-import com.itextpdf.text.Document;
-import com.itextpdf.text.DocumentException;
-import com.itextpdf.text.Element;
-import com.itextpdf.text.Paragraph;
-import com.itextpdf.text.Phrase;
-import com.itextpdf.text.Rectangle;
-import com.itextpdf.text.pdf.PdfPCell;
-import com.itextpdf.text.pdf.PdfPTable;
-import com.itextpdf.text.pdf.PdfWriter;
-import java.io.FileOutputStream;
+
+
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -48,62 +40,12 @@ public class MusicStation extends Application {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args)throws IOException, DocumentException{
+    public static void main(String[] args)throws IOException{
   
 
   
         launch(args);
 
     }
-    
-    /*public void gerar(Musica m){
-            // criação do documento 
-        
-        Document document = new Document();
-        String cl = Integer.toString(m.getClas());
-        try { PdfWriter.getInstance(document, new FileOutputStream("/Users/lazarodutra/Documents/PDF")); 
-        document.open();
-         // adicionando um parágrafo no documento 
-        document.add(new Paragraph("Relatório Geral"));
-            
-            PdfPTable table = new PdfPTable(5); // 5 columns.
-
-            PdfPCell cell1 = new PdfPCell(new Paragraph(m.getMusica()));
-            PdfPCell cell2 = new PdfPCell(new Paragraph(m.getAlbum()));
-            PdfPCell cell3 = new PdfPCell(new Paragraph(m.getArtista()));
-            PdfPCell cell4 = new PdfPCell(new Paragraph(m.getGenero()));
-            PdfPCell cell5 = new PdfPCell(new Paragraph(cl));
-            
-
-            table.addCell(cell1);
-            table.addCell(cell2);
-            table.addCell(cell3);
-            table.addCell(cell4);
-            table.addCell(cell5);
-
-            document.add(table);
-             PdfPTable table2 = new PdfPTable(5);
-            PdfPCell cell11 = new PdfPCell(new Paragraph(m.getMusica()));
-            PdfPCell cell22 = new PdfPCell(new Paragraph(m.getAlbum()));
-            PdfPCell cell33 = new PdfPCell(new Paragraph(m.getArtista()));
-            PdfPCell cell44 = new PdfPCell(new Paragraph(m.getGenero()));
-            PdfPCell cell55 = new PdfPCell(new Paragraph(cl));
-            
-
-            table.addCell(cell11);
-            table.addCell(cell22);
-            table.addCell(cell33);
-            table.addCell(cell44);
-            table.addCell(cell55);
-            document.add(table2);
-            document.close();
-        } 
-        catch(DocumentException de) { System.err.println(de.getMessage());
-        } 
-        catch(IOException ioe) { System.err.println(ioe.getMessage()); 
-        } 
-        document.close(); 
-        
-    }*/
-        
+          
 }
